@@ -13,6 +13,8 @@ describe('place order',()=>{
         SignUpHelper.insertUsername(username);
         SignUpHelper.insertPassword(password);
         SignUpHelper.clickOnSignUpButton();
+
+        CommonPageHelper.clickOnLoginOption();
         cy.wait(6000);
     })
 })

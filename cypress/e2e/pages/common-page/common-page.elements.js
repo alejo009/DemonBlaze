@@ -4,6 +4,10 @@ export class CommonPageElements {
             get signUp() {
                 return cy.get('a[data-target="#signInModal"]');
             },
+
+            get login(){
+                return cy.get('a[data-target="#logInModal"]');
+            }
         };
     }
 }
