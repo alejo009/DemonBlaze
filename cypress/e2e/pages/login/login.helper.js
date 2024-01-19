@@ -6,6 +6,7 @@ export class LoginHelper {
     }
 
     static insertPassword(password){
+        LoginElements.elements.password.click();
         LoginElements.elements.password.type(password);
     }
 

@@ -7,7 +7,12 @@ export class CommonPageElements {
 
             get login(){
                 return cy.get('a[data-target="#logInModal"]');
+            },
+
+            get nameOfUser(){
+                return cy.get("#nameofuser");
             }
+        
         };
     }
 }
