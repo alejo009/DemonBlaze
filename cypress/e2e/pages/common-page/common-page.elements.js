@@ -15,6 +15,11 @@ export class CommonPageElements {
 
             get home(){
                 return  cy.contains('a','Home');
+            },
+
+            get cart(){
+                return cy.get('a#cartur');
+
             }
         
         };

@@ -1,9 +1,11 @@
 /// <reference types="cypress" />
 
+import { CommonPageElements } from "../pages/common-page/common-page.elements";
 import { CommonPageHelper } from "../pages/common-page/common-page.helper"
 import { HomeConstants } from "../pages/home/home.constants";
 import { HomeHelper } from "../pages/home/home.helper";
 import { LoginHelper } from "../pages/login/login.helper";
+import { productoHelper } from "../pages/product/producto.helper";
 import { SignUpConstants } from "../pages/sign-up/sign-up.constants";
 import { SignUpHelper } from "../pages/sign-up/sign-up.helper";
 
@@ -28,6 +30,11 @@ describe('place order',()=>{
         
         CommonPageHelper.clickOnHomePage();
         HomeHelper.clickOnProductName(productName);
+        productoHelper.clickOnAddToProductButton();
+
+        CommonPageHelper.clickOnCartOption();
+
+
         cy.wait(6000);
     })
 })

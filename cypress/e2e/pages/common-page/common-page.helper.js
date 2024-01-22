@@ -23,6 +23,10 @@ export class CommonPageHelper {
         CommonPageElements.topMenu.home.click();
     }
 
+    static clickOnCartOption(){
+        CommonPageElements.topMenu.cart.click();
+    }
+
     static generateRandomString = (length = 10) => {
         let result = '';
         const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
