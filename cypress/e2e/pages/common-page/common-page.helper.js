@@ -15,7 +15,7 @@ export class CommonPageHelper {
     }
 
     static verifySignedUser(username){
-        CommonPageElements.topMenu.nameOfUser.should('contain',`Welcome ${{username}}`);
+        CommonPageElements.topMenu.nameOfUser.should('contain', `Welcome ${username}`);
 
     }
 
