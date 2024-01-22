@@ -1,9 +1,10 @@
 import { SignUpElements } from "./sign-up.elements";
+import { CommonPageHelper } from "../common-page/common-page.helper";
 
 export class SignUpHelper {
 
     static insertUsername(username){
-        SignUpElements.elements.username.type(username);
+        SignUpElements.elements.username.invoke('val',username);
     }
 
     static insertPassword(password){
@@ -13,5 +14,12 @@ export class SignUpHelper {
 
     static clickOnSignUpButton(){
         SignUpElements.elements.signUpButton.click();
+    }
+
+    static createUserAccount(username,password){
+        CommonPageHelper.clickOnSignUpOption();
+        this.insertUsername(username);
+        this.insertPassword(password);
+        this.clickOnSignUpButton();
     }
 }
