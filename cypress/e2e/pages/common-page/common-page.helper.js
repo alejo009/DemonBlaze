@@ -19,6 +19,10 @@ export class CommonPageHelper {
 
     }
 
+    static clickOnHomePage(){
+        CommonPageElements.topMenu.home.click();
+    }
+
     static generateRandomString = (length = 10) => {
         let result = '';
         const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';

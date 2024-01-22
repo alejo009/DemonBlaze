@@ -10,7 +10,11 @@ export class CommonPageElements {
             },
 
             get nameOfUser(){
-                return cy.get("#nameofuser");
+                return cy.get('#nameofuser');
+            },
+
+            get home(){
+                return  cy.contains('a','Home');
             }
         
         };
